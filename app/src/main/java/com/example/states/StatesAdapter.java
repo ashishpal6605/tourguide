@@ -19,12 +19,10 @@ public class StatesAdapter extends RecyclerView.Adapter<StatesAdapter.statesView
 
     class statesViewHolder extends RecyclerView.ViewHolder {
         TextView stateName;
-        public statesViewHolder(@NonNull View itemView) {
-            super(itemView);
+        public statesViewHolder(@NonNull View itemView) {super(itemView);
             stateName = itemView.findViewById(R.id.view2);
         }
-        public void bindDataToUI(Country stateName) {
-            this.stateName.setText(stateName.getName());
+        public void bindDataToUI(Country stateName) {this.stateName.setText(stateName.getName());
         }
     }
     @NonNull

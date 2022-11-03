@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         mBinding.view.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         ArrayList<Country> country = new ArrayList<>();
-        country.add(new Country("Arunachal Pradesh")); //0
-        country.add(new Country("Assam"));//1
-        country.add(new Country("Bihar"));//2
+        country.add(new Country("Arunachal Pradesh"));
+        country.add(new Country("Assam"));
+        country.add(new Country("Bihar"));
         country.add(new Country("Chhattisgarh"));
         country.add(new Country("Goa"));
         country.add(new Country("Gujarat"));
@@ -50,8 +50,7 @@ public class MainActivity extends AppCompatActivity {
         country.add(new Country("West Bengal"));
 
         StatesAdapter statesAdapter= new StatesAdapter();
-        statesAdapter.setDataToAdapter(country);
-
-       mBinding.view.setAdapter(statesAdapter);
+        StatesAdapter.setDataToAdapter(country);
+        mBinding.view.setAdapter(statesAdapter);
     }
 }
