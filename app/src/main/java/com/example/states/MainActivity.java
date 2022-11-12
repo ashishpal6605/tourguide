@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         country.add(new Country("Uttarakhand"));
         country.add(new Country("West Bengal"));
 
-        StatesAdapter statesAdapter= new StatesAdapter();
-        StatesAdapter.setDataToAdapter(country);
+        StatesAdapter statesAdapter= new StatesAdapter(country);
+        //StatesAdapter.setDataToAdapter(country);
         mBinding.view.setAdapter(statesAdapter);
     }
 }

@@ -14,9 +14,11 @@ public class StatesAdapter extends RecyclerView.Adapter<StatesAdapter.statesView
 
     ArrayList<Country> country = new ArrayList<>();
 
-    public static void setDataToAdapter(ArrayList<Country> country) {
-    }
+    public StatesAdapter(ArrayList<Country> country) {
 
+        this.country=country;
+
+    }
     class statesViewHolder extends RecyclerView.ViewHolder {
         TextView stateName;
         public statesViewHolder(@NonNull View itemView) {super(itemView);
